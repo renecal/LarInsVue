@@ -12,9 +12,3 @@ defineProps({
     message : String   //props more info doc in vue
 })
 </script>
-<script>
-import MainLayout from "../../Layouts/MainLayout.vue";
-export default {
-    layout: MainLayout,
-}
-</script>
