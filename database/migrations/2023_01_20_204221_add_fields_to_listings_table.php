@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::table('listings', function (Blueprint $table) {
             //
-            $table->unsignedTinyInteger('beds');
-            $table->unsignedTinyInteger('baths');
-            $table->unsignedSmallInteger('area');
+            $table->unsignedTinyInteger('beds'); /* camas */
+            $table->unsignedTinyInteger('baths'); /* baños */
+            $table->unsignedSmallInteger('area'); /* area */
 
-            $table->tinyText('city');
-            $table->tinyText('code');
-            $table->tinyText('street');
-            $table->tinyText('street_nr');
+            $table->tinyText('city'); /* ciudad */
+            $table->tinyText('code');   /* code postal */
+            $table->tinyText('street'); /* direccion */
+            $table->tinyText('street_nr'); /* numero de direccion */
 
-            $table->unsignedInteger('price');
+            $table->unsignedInteger('price');   /* precio */
         });
     }
 
