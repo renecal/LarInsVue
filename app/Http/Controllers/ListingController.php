@@ -42,7 +42,16 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+
+        // $listing = new Listing();
+        // $listing->beds = $request->beds;
+
+        // $listing->save();
+
+        Listing::create($request->all());
+
+        return redirect()->route('listing.index')->with('success', 'listing was created!');
     }
 
     /**
