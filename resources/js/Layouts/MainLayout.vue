@@ -4,6 +4,9 @@
   <Link href="/listing">Listing Page</Link>&nbsp;
   <Link href="/listing/create">New Element</Link>&nbsp;
   <!-- <div>The page with time {{ timer }}</div> -->
+  <div v-if="$page.props.flash.success" class="alert">
+    {{ $page.props.flash.success }}
+  </div>
   <slot />
 </template>
 
